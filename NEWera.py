@@ -41,4 +41,4 @@ def J_abs(w):
     return (J_dep(0,w)*J_dep(2,w)-J_dep(1,w)**2)/(J_dep(2,w)**2+(Nue*h)**2*J_dep(1,w)**2)
 w=np.linspace(-1e-3,1e-3,200)
 plt.figure(figsize=(14,10))
-plt.plot(J_dep(2,w)**2+(Nue*h)**2*J_dep(1,w)**2)
+plt.plot(w,J_abs(w))
